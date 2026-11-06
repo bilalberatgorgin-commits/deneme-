@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usta Dönerci | Eliyle Yapılmış, Yağmış Lezzet</title>
+    <meta name="description" content="Eski mahalle dönercisi - Eliyle hazırlanmış, yağmış ve lezzetli döner, dürüm ve lahmacun">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="doner-spinner"></div>
+            <h2>Döner Pişiriliyor...</h2>
+            <p>Afiyet olsun için hazırlanıyor</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🥙</span>
+                <span class="logo-text">Usta<span>Dönerci</span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkımızda</a></li>
+                <li><a href="#menu" class="nav-link">Menü</a></li>
+                <li><a href="#gallery" class="nav-link">Galeri</a></li>
+                <li><a href="#reservation" class="nav-link">Rezervasyon</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-cart" id="cart-btn" aria-label="Sepet">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="btn-mobile" id="mobile-menu-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="steam-1"></div>
+            <div class="steam-2"></div>
+            <div class="steam-3"></div>
+        </div>
+        <div class="container hero-content">
+            <span class="badge">🔥 Günün Özel Lezzeti</span>
+            <h1>Eliyle Yazılmış,<br>Yağmış Lezzet</h1>
+            <p>Mahalle dönercisi gelenekleriyle, tek tek el emeği ile hazırladığımız özel döner, dürüm ve lahmacun sizin için.</p>
+            <div class="hero-cta">
+                <a href="#menu" class="btn btn-primary">Menüyü Gör</a>
+                <a href="#reservation" class="btn btn-secondary">Rezervasyon Yap</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder"></div>
+                        <div class="frame-decoration"></div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Yıl Deneyim</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Günlük Müşteri</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Taze Ürün</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-tag">Hakkımızda</span>
+                    <h2>Annemizin Tarifinden,<br>Elimize Geçmiş Lezzet</h2>
+                    <p>1998 yılında küçük bir mahalle dönercisi olarak başladığımız hikayemiz, günümüzde şehrin en sevilen lezzetlerine dönüştü.</p>
+                    <ul class="features">
+                        <li><span class="check">✓</span> Günlük taze et ve sebze</li>
+                        <li><span class="check">✓</span> Özel ev yapımı baharat karışımı</li>
+                        <li><span class="check">✓</span> Eliyle hazırlanan pide ve dürüm ekmekleri</li>
+                        <li><span class="check">✓</span> Hızlı ve dostça servis</li>
+                    </ul>
+                    <a href="tel:+902125550199" class="btn btn-outline">Sipariş Ver: +90 212 555 01 99</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Menümüz</span>
+                <h2>Lezzetlerimiz</h2>
+                <p>Her bir yemek el emeği ve özenle hazırlanmıştır</p>
+            </div>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Hepsi</button>
+                <button class="filter-btn" data-filter="doner">Döner</button>
+                <button class="filter-btn" data-filter="durum">Dürüm</button>
+                <button class="filter-btn" data-filter="lahmacun">Lahmacun</button>
+                <button class="filter-btn" data-filter="icecek">İçecekler</button>
+                <button class="filter-btn" data-filter="tatli">Tatlılar</button>
+            </div>
+            <div class="menu-grid" id="menu-grid">
+                <!-- Menu items injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Galeri</span>
+                <h2>Mutfamızdan Kareler</h2>
+                <p>Gözünüzde canlanan lezzetler</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image"></div>
+                    <div class="gallery-overlay">
+                        <h3>Özel Döner Porsiyonu</h3>
+                        <span>🥙</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"></div>
+                    <div class="gallery-overlay">
+                        <h3>Dürüm Lezzeti</h3>
+                        <span>🌯</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"></div>
+                    <div class="gallery-overlay">
+                        <h3>Taze Lahmacun</h3>
+                        <span>🍕</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"></div>
+                    <div class="gallery-overlay">
+                        <h3>Ayran & Şalgam</h3>
+                        <span>🥤</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"></div>
+                    <div class="gallery-overlay">
+                        <h3>Baharat Dünyası</h3>
+                        <span>🌶️</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image"></div>
+                    <div class="gallery-overlay">
+                        <h3>Ev Yapımı Baklava</h3>
+                        <span>🍯</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="reservation-box">
+                <div class="reservation-image"></div>
+                <div class="reservation-form-wrapper">
+                    <div class="section-header">
+                        <span class="section-tag">Rezervasyon</span>
+                        <h2>Masa Ayırtın</h2>
+                        <p>Ailenizle veya arkadaşlarınızla lezzetli bir akşam geçirin</p>
+                    </div>
+                    <form id="reservation-form">
+                        <div class="form-group">
+                            <label>İsim Soyisim</label>
+                            <input type="text" name="name" required placeholder="Ahmet Yılmaz">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefon</label>
+                            <input type="tel" name="phone" required placeholder="+90 555 123 45 67">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Tarih</label>
+                                <input type="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Saat</label>
+                                <input type="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Kişi Sayısı</label>
+                            <select name="guests" required>
+                                <option value="1">1 Kişi</option>
+                                <option value="2">2 Kişi</option>
+                                <option value="3">3 Kişi</option>
+                                <option value="4">4 Kişi</option>
+                                <option value="5">5+ Kişi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Özel İstekler</label>
+                            <textarea name="message" placeholder="Masada çocuk sandalyesi ister miydiniz?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Rezervasyon Oluştur</button>
+                    </form>
+                    <div id="reservation-success" class="success-message">
+                        <div class="success-icon">✅</div>
+                        <h3>Rezervasyonunuz Alındı!</h3>
+                        <p>En kısa sürede sizinle iletişime geçeceğiz. Afiyet olsun dileriz.</p>
+                        <button class="btn btn-outline" onclick="closeReservationSuccess()">Tamam</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">İletişim</span>
+                    <h2>Bize Ulaşın</h2>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h3>Adres</h3>
+                            <p>Fatih, İstanbul, Türkiye</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h3>Telefon</h3>
+                            <p><a href="tel:+902125550199">+90 212 555 01 99</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕒</span>
+                        <div>
+                            <h3>Çalışma Saatleri</h3>
+                            <p>Pazartesi - Cuma: 11:00 - 23:00<br>Cumartesi - Pazar: 12:00 - 00:00</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><span>📘</span></a>
+                        <a href="#"><span>📸</span></a>
+                        <a href="#"><span>🐦</span></a>
+                        <a href="#"><span>📱</span></a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🥙</span>
+                    <span class="footer-brand">Usta<span>Dönerci</span></span>
+                </div>
+                <p>&copy; 2024 Usta Dönerci. Tüm hakları saklıdır. Eliyle hazırlanmıştır ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Sepetim</h3>
+            <button class="btn-close-cart" id="close-cart">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items injected by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Toplam:</span>
+                <span id="cart-total">0 ₺</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkout-btn">Siparişi Onayla</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
